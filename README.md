@@ -17,7 +17,7 @@ TDB
 
 ## Environment variables
 
-* `DATABASE_FILE` - Name of a SQLite database file relative to work directory (default: **database.db**).
+* `DATABASE_FILE` - Name of a SQLite database file (inside work directory). Default: **database.db**.
 * `TARGET_VERSION` - Optional. Desired version.
 
 ## Volumes

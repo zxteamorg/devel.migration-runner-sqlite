@@ -1,6 +1,6 @@
 FROM node:12-alpine AS Builder
 WORKDIR /build/usr/local/bin/
-RUN npm install --production @zxteam/cancellation @zxteam/errors @zxteam/logger @zxteam/sql @zxteam/sql-sqlite
+RUN npm install --production --no-save @zxteam/cancellation @zxteam/errors @zxteam/logger @zxteam/sql @zxteam/sql-sqlite
 COPY docker-entrypoint.js /build/usr/local/bin/docker-entrypoint.js
 
 FROM node:12-alpine
